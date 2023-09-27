@@ -5,10 +5,10 @@ function App() {
 
   const [display, setDisplay] = useState("");
 
-  function handleSubmit(e) {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e.target.form);
-    setDisplay(e.target.value);
+    console.log(e.target.abc.value);
+    setDisplay(e.target.abc.value);
   }
   
   return (
